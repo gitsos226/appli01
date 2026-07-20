@@ -5,6 +5,13 @@ class MessagePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(child: Text('page des messages'));
+    return Center(
+      child: ElevatedButton(
+        child: Text('page des messages'),
+        onPressed: () {
+          Navigator.pop(context);
+        },
+      ),
+    );
   }
 }
